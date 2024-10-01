@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .check {
+    margin-bottom: -7px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-button);
+    color: var(--white);
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid var(--greyLight-button);
+    margin-right: 16px;
+    user-select: none;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}

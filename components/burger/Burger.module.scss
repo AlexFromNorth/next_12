@@ -1,0 +1,51 @@
+.wrapper {
+  display: none;
+}
+
+.menu_bar {
+  width: 40px;
+  transition: 0.3s ease;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+.menu_bar:hover > div {
+  opacity: 0.7;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 1px;
+  margin: 7px 0;
+}
+
+#nav {
+  position: absolute;
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+#nav ul {
+  padding: 0;
+}
+
+#nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    display: inline-block;
+  }
+}

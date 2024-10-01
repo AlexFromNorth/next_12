@@ -1,11 +1,97 @@
-body, html {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --container: 0 10%;
+  --white-text: white;
+  --white-grey: #dbdbdb;
+  --black: #0a0a0a;
+  --grey-text: #8a8a8a;
+  --grey-button: #1e1f21;
+  --greyLight-button: #3b3d41;
+  --orange: #ff5a1f;
+  --grey: #141414;
+}
+
+body * {
+  font-family: "Inter", sans-serif !important;
+}
+
+#__next {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+}
+
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  color: var(--white-text);
+  box-sizing: border-box;
+  cursor: default;
+  font-weight: 400;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+
+  span {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+span,
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 1060px) {
+  #__next {
+    overflow: visible;
+    height: auto;
+    background-color: var(--black);
+  }
 }
